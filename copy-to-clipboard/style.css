@@ -1,0 +1,45 @@
+
+h1{
+    text-align: center;
+    color: #008080;
+}
+
+.one , .two , .three{
+    text-align: center;
+}
+
+.three, .two{
+    margin-top: 50px;
+}
+
+body{
+    background-color: grey;
+    align-items: center;
+}
+.container{
+    align-self: center;
+    background-color:aliceblue;
+    margin: auto;
+    margin-top: 25px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    width: 40%;
+    border-radius: 10px;
+    border: 5px solid rgb(61, 61, 61);
+}
+
+textarea{
+
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 80%;
+}
+
+button{
+    height: 2rem;
+    background-color: white;
+    color:#008080;
+    font-size: large;
+    font-weight: bold;
+}
