@@ -97,5 +97,34 @@ $(document).ready(function(){
 
     });
     
-    
+    $('#email').keyup(function(){
+        email_validation();
+    });
+
+    function email_validation(){
+        var email_val = $('#email').val();
+        if(email_val.length==''){
+            $('#emailvalidation').show();
+            $('#emailvalidation').html('Email cannot be empty');
+            $('#emailvalidation').css('color','red');
+            err=false;
+            return false;
+        }
+        else{
+
+            $('#emailvalidation').hide();
+        }
+        if(email_val.length<4){
+            $('#emailvalidation').show();
+            $('#emailvalidation').html('Email Should be valid');
+            $('#emailvalidation').css('color','red');
+            Error=false;
+            return false;
+        }
+        else{
+
+            $('#emailvalidation').hide();
+        }
+    }
 });
+
