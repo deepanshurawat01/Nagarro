@@ -6,7 +6,8 @@ $(document).ready(function(){
     var err=true;
     var password_error=true;
     var confirm_password_error=true;
-
+    var confirm_email = true;
+    
     $('#username').keyup(function(){
         username_validation();
     });
